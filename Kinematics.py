@@ -1,10 +1,10 @@
 #from vpython import *
 
-A = int(input("Pick which problem you have, "))
+A = int(input("Pick which problem you have\n1)Displacement in x direction,\n2)Displacement in y direction,\n3)...,\n"))
 
 if A == 1:
 
-    B = int(input("Pick which problem you have, "))
+    B = int(input("Pick which problem you have\n1)Solving for the final position,\n2)Solving for the starting position,\n3)Solving for the change in time,\n4)Solving for the velocity,\n"))
 
     if B == 1:
         x = int(input("What is the starting position value (in meters), "))
