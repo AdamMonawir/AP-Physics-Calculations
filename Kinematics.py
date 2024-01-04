@@ -1,4 +1,4 @@
-from vpython import *
+#from vpython import *
 
 A = int(input("Pick which problem you have, "))
 
