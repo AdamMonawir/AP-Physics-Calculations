@@ -17,22 +17,23 @@ if A == 1:
   elif B == 2:
     f = float(input("What is the final position value (in meters), "))
     t = float(input("What is the change in time (in seconds), "))
-    v =float(input("What is the starting velocity value (in meters per second), "))
-    a =float(input("What is the acceleration value (in meters per second squared), "))
+    v = float(input("What is the starting velocity value (in meters per second), "))
+    a = float(input("What is the acceleration value (in meters per second squared), "))
     x = f - v*t - (1/2*a*t**2)
     print("Starting position = ", x,"m")
 
   elif B == 3:
-    f =float(input("What is the final position value (in meters), "))
-    x =float(input("What is the starting position value (in meters), "))
-    v =float(input("What is the starting velocity value (in meters per second), "))
-    t = (f-x)/v
+    f = float(input("What is the final position value (in meters), "))
+    x = float(input("What is the starting position value (in meters), "))
+    v = float(input("What is the starting velocity value (in meters per second), "))
+    a = float(input("What is the acceleration value (in meters per second squared), "))
+    t = (-v+sqrt(v**2 - 4*(1/2*a)*(f-x)))/2*(1/2*a)
     print("Change in time = ", t,"s")
 
   elif B == 4:
-    f =float(input("What is the final position value (in meters), "))
-    x =float(input("What is the starting position value (in meters), "))
-    t =float(input("What is the change in time (in seconds), "))
+    f = float(input("What is the final position value (in meters), "))
+    x = float(input("What is the starting position value (in meters), "))
+    t = float(input("What is the change in time (in seconds), "))
     v = (f-x)/t
     print("Starting velocity = ", v,"m/s")
   
@@ -41,7 +42,7 @@ if A == 1:
     x =float(input("What is the starting position value (in meters), "))
     t =float(input("What is the change in time (in seconds), "))
     a = (f-x)/t
-    print("Starting velocity = ", a,"m/s\u00b2")
+    print("Acceleration of the system = ", a,"m/s\u00b2")
 
   else:
     print("WHY WOULD YOU DO THIS")
