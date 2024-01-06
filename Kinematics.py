@@ -27,8 +27,9 @@ if A == 1:
     x = float(input("What is the starting position value (in meters), "))
     v = float(input("What is the starting velocity value (in meters per second), "))
     a = float(input("What is the acceleration value (in meters per second squared), "))
-    t = (-v+sqrt(v**2 - 4*(1/2*a)*(f-x)))/2*(1/2*a)
-    print("Change in time = ", t,"s")
+    t = (-v+sqrt(v**2-4*(1/2*a)*(x-f)))/2*(1/2*a)
+    p = (-v-sqrt(v**2-4*(1/2*a)*(x-f)))/2*(1/2*a)
+    print("Change in time = ", t,"s", p)
 
   elif B == 4:
     f = float(input("What is the final position value (in meters), "))
